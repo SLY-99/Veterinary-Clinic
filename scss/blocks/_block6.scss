@@ -1,0 +1,112 @@
+.section6{
+    &__tittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 20px;
+        color: #333333;
+        margin-top: 220px;
+        margin-bottom: 80px;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    &__box{
+        max-width: 308px;
+        max-height: 435px;
+        background: #FEFEFE;
+        border: 1px solid #E4E4E2;
+        border-radius: 5px;
+    }
+    &__box:hover{
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &__box:active{
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &__boxx{
+        display: flex;
+        max-width: 640px;
+        max-height: 435px;
+        background: #FFFFFF;
+        border: 1px solid #F3F3F3;
+        border-radius: 5px;
+        margin: 0px 24px;
+    }
+    &__boxx:hover{
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &__boxx:active{
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &__span{
+        @extend %text-style;
+        color: #949494 !important;
+        margin-left: 200px;
+        margin-top: 15px;
+    }
+    &__date{
+        @extend %text-style;
+        color: #949494 !important;
+        margin-left: 60px;
+    }
+    &__date-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin-top: 40px;
+    }
+    &__h5{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 25px;
+        color: #000000;
+        max-width: 200px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    &__h5:nth-child(2){
+        margin-top: 44px;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;
+        max-width: 300px;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px
+    }
+    &__link{
+        @extend %link;
+        text-decoration: none;
+        margin-left: 35px;
+    }
+    &__link:hover{
+        color: #FFBD54;
+    }
+    &__link:active{
+        color: #333333;
+        opacity: 0.7;
+    }
+    &__link::before{
+        content: url(/images/home-page/paw.svg);
+        position: relative;
+        right: 5px;
+        top: 7px;
+    }
+    &__hash{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #3D9CEA;
+        text-decoration: none;
+        margin-right: 7px;
+    }
+}

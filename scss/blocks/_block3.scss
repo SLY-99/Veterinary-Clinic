@@ -1,0 +1,127 @@
+// Home-page classes
+.section3{
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    &__wrapper::before{
+        content: url(/images/home-page/Vector_left.svg);
+        cursor: pointer;
+        position: relative;
+        top: 100px;
+        right: 20px;
+    }
+    &__wrapper::after{
+        content: url(/images/home-page/Vector_right.svg);
+        cursor: pointer;
+        position: relative;
+        top: 100px;
+        left: 20px;
+    }
+    &__tittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 54px;
+        text-align: center;
+        margin: 190px 0px 80px;
+    }
+    &__box{
+        width: 193px;
+        height: 215px;
+        background-color:#fff;
+        border: 1px solid #F3F3F3;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-right: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__box:hover{
+        opacity: 0.8;
+    }
+    &__box:active{
+        opacity: 0.6;
+    }
+    &__img{
+        width: fit-content;
+    }
+    &__text{
+        max-width: 100px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #333333;
+        margin-top: 20px;
+    }
+}
+
+
+
+//Contact-page classes
+.section33{
+    &__wrapper{
+        display: flex;
+        margin-top: 50px;
+        padding-bottom: 200px;
+        position: relative;
+    }
+    &__wrapper::before{
+        content: url(/images/contact-page/search-dog.png);
+        position: absolute;
+        top: -290px;
+    }
+}
+
+
+
+
+//FAQ-page classes
+.section333{
+    &__wrapper{
+        max-width: 752px;
+        height: 139px;
+        background: #FFFFFF;
+        border: 1px solid #F3F3F3;
+        border-radius: 5px;
+        margin-top: 18px;
+        margin-left: 130px;
+        position: relative;
+    }
+    &__arrow-down::after{
+        content: url(/images/FAQ/arrow-down.png);
+        position: absolute;
+        right: 40px;
+        top: 65px;
+        cursor: pointer;
+    }
+    &__clock::after{
+        content: url(/images/FAQ/clock.png);
+        position: absolute;
+        right: 40px;
+        top: 65px;
+        cursor:progress;
+    }
+    &__box{
+        background-image: url(/images/FAQ/parrot.png);
+        background-repeat: no-repeat;
+        background-position: right,bottom;
+        background-position-y:330px;
+        position: relative;
+        padding-bottom: 270px;
+    }
+    &__box::after{
+        content: url(/images/FAQ/shadow.png);
+        position: absolute;
+        bottom:50px;
+        right: 60px;
+    }
+}
+.opasity{
+    opacity: 0.5;
+}

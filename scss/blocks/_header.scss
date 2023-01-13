@@ -1,0 +1,120 @@
+.header{
+    background-color: #f9f8f8;
+    &__info{
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        padding-right: 45px;
+        padding-top: 14px;
+        padding-bottom: 10px
+    }
+    &__text{
+        @extend %text-style;
+        margin-right: 100px;
+    }
+    &__text::before{
+        content: url(/images/home-page/house.svg);
+        position: relative;
+        right: 7px;
+    }
+    &__info-link{
+        @extend %text-style;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+    &__info-link:hover{
+        color: #FFBD54;
+    }
+    &__info-link:active{
+        color: #333333;
+        opacity: 0.6;
+    }
+    &__icon-tel::before{
+        content: url(/images/home-page/phone.svg);
+        position: relative;
+        right: 7px;
+    }
+    &__icon-dot::before{
+        content:url(/images/home-page/dot.svg);
+        position: relative;
+        right: 7px;
+        bottom: 2px;
+      
+    }
+    &__info-link:nth-child(4){
+        margin-right: 80px;
+    }
+    &__info-text{
+        @extend %text-style;
+        margin-left: 17px;
+    }
+    &__icon-date::before{
+        content: url(/images/home-page/calendar.svg);
+        position: relative;
+        top: 3px;
+        right: 5px;
+    }
+    &__nav{
+        background-color: #fff;
+        border: 1px solid #F3F3F3;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        position: relative;
+        padding: 16px 0px;
+    }
+    &__list{
+        list-style-type: none;
+        display: flex;
+        position: relative;
+    }
+    &__list::before{
+        content: url(/images/home-page/icon__fish.svg);
+        position: absolute;
+        left: 20px
+    }
+    &__link{
+        @extend %link;
+        text-decoration: none;
+        margin-left: 50px;
+    }
+    &__link:hover{
+        border-bottom: 3px solid #F4FFAD;
+    }
+    &__link:active{
+        opacity: 0.6;
+    }
+    &__search-link{
+        @extend %link;
+        display: flex;
+        align-items: center;
+        margin-right: 45px;
+        margin-left: 155px;
+        text-decoration: none;
+    }
+    &__search-link:hover{
+        color: #FFBD54;
+    }
+    &__search-link:active{
+        color: #333333;
+        opacity: 0.7;
+    }
+    &__search-link::before{
+        content: url(/images/home-page/paw.svg);
+        position: relative;
+        right: 5px;
+        top: 3px;
+    }
+    &__logo{
+        position: absolute;
+        left: 35px;
+        top: -15px;
+        z-index: 1;
+    }
+    &__logo:hover{
+        opacity: 0.8;
+    }
+    &__logo:active{
+        opacity: 0.6;
+    }
+}

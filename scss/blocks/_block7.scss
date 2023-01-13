@@ -1,0 +1,107 @@
+.section7{
+    &__wrapper{
+        background-color: #333333;
+        background-image:url(/images/home-page/fish.png);
+        background-size: 880px;
+        background-repeat:no-repeat;
+        background-position: right;
+        display: flex;
+        margin: 250px 0px;
+    }
+    &__box2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__sub-tittle{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 62px;
+        color: #FFFFFF;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    &__p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;
+        max-width: 350px;
+        margin-left: 100px;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    &__text{
+        width: 375px;
+        height: 50px;
+        background: #FFFFFF;
+        border: 1px solid #fff;
+        outline: none;
+        margin-bottom: 14px;
+        margin-left: 120px;
+        padding-left: 20px;
+    }
+    &__text:focus{
+        border: 2px solid #FFBD54;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    &__text:focus::placeholder{
+       color: #333333;
+    }
+    &__text::placeholder{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #949494;
+    }
+    &__textarea{
+        width: 375px;
+        height: 165px;
+        background: #FFFFFF;
+        border: 1px solid #fff;
+        outline: none;
+        margin-left: 120px;
+        padding-bottom: 110px;
+        padding-left: 20px;
+    }
+    &__textarea:focus{
+        border: 2px solid #FFBD54;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    &__textarea:focus::placeholder{
+       color: #333333;
+    }
+    &__textarea::placeholder{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #949494;
+    }
+    &__btn{
+        width: 226px;
+        height: 50px;
+        background: #FFBD54;
+        text-decoration: none;
+        border: 1px solid #FFBD54;
+        @extend %link;
+        color: #fff !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 120px;
+        margin-top: 30px;
+    }
+    &__btn:hover{
+        background: #333333;
+        color: #FFBD54 !important;
+    }
+    &__btn:active{
+        opacity: 0.6;
+    }
+}

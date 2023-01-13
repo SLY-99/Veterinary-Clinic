@@ -1,0 +1,192 @@
+// Home-page classes
+.section1{
+    
+    &__wrapper{
+        min-height: 825px;
+        background-image: url(/images/home-page/bg_intro.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__box{
+        margin-right: 88px;
+        position: relative;
+        bottom: 10px;
+    }
+    &__tittle{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 70px;
+        line-height: 64px;
+        color: #333333;
+        max-width: 600px;
+        margin: 0px;
+    }
+    &__text{
+        @extend %link;
+        color: #949494 !important;
+        max-width: 500px;
+        margin-top: 30px;
+    }
+    &__link{
+        width: 181px;
+        height: 50px;
+        background: #333333;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        @extend %link;
+        color: #FFFFFF !important;
+        text-decoration: none;
+        margin-top: 40px;
+    }
+    &__link:hover{
+        background: #FFBD54;
+        color: #333333 !important;
+    }
+    &__link:active{
+        opacity: 0.6;
+    }
+}
+.skyblue{
+    color: #78C0DE;
+}
+
+
+// Contact-page classes
+.section11{
+    &__wrapper{
+        background-image: url(/images/contact-page/intro-dog.png);
+        background-repeat: no-repeat;
+        background-position:right;
+        position: relative;
+    }
+    &__wrapper::after{
+        content: url(/images/contact-page/shadow.png);
+        position: absolute;
+        right: 0px;
+        bottom: -40px;
+        
+    }
+    &__text-box{
+        padding-left: 177px;
+        padding-top: 118px;
+    }
+    &__tittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 64px;
+        color: #333333;
+        margin: 0px;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;
+        max-width: 440px;
+        margin-top: 27px;
+    }
+    &__lists{
+        display: flex;
+        margin-left: 176px;
+    }
+    &__menu{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 80px; 
+        margin-top: 220px;
+        position: relative;
+    }
+    &__info-text{
+        @extend %link;
+        margin: 0px;
+    }
+    &__text2{
+        @extend %link;
+        margin: 0px;
+    }
+    &__text2::before{
+        content: url(/images/contact-page/location.png);
+        position:absolute;
+        top: -100px
+    }
+    &__info-link{
+        @extend %link;
+        text-decoration: none;
+        margin: 0px;
+    }
+    &__info-link:hover{
+        color: #FFBD54;
+    }
+    &__info-link:active{
+        color: #333333;
+        opacity: 0.6;
+    }
+}
+.calendar::before{
+    content: url(/images/contact-page/calendar.png);
+    position:absolute;
+    top: -100px
+}
+.phone::before{
+    content: url(/images/contact-page/phone.png);
+    position:absolute;
+    top: -100px
+}
+
+
+
+
+//FAQ-page classes
+.section111{
+    &__wrapper{
+        margin-left: 130px;
+        padding-top: 117px;
+    }
+    &__tittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 64px;
+        color: #333333;
+        text-transform: uppercase;
+        margin: 0px;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;
+        margin-top: 27px;
+        max-width: 445px;
+        margin-top: 27px;
+    }
+    &__link{
+        width: 201px;
+        height: 50px;
+        background: #78C0DE;
+        border-radius: 3px;
+        @extend %link;
+        color: #fff !important;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    &__link:hover{
+        background-color: #000;
+    }
+    &__link::before{
+      content: url(/images/FAQ/link.png);
+      margin-right: 10px;
+    }
+}

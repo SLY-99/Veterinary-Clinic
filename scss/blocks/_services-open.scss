@@ -1,0 +1,296 @@
+.section11111{
+    &__wrapper{
+        height: 530px;
+        background-image: url(/images/service-open/intro-dog.png);
+        background-repeat: no-repeat;
+        border-bottom: 1px solid #fff;
+    }
+    &__text-box{
+        display: flex;
+        margin-left: 220px;
+        margin-top: 30px;
+    }
+    &__text1{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #949494;
+        text-decoration: none;
+    }
+    &__text1:nth-child(2)::before{
+        content: url(/images/service-open/dot.svg);
+        margin: 0px 8px;
+        position: relative;
+        bottom: 2px;
+    }
+    &__text2{
+        @extend %text-style;
+        text-decoration: none;
+    }
+    &__text2::before{
+        content: url(/images/service-open/dot.svg);
+        margin: 0px 8px;
+        position: relative;
+        bottom: 2px;
+    }
+}
+
+.section22222{
+    &__wrapper{
+        margin-left: 220px;
+        position: relative;
+        padding-bottom: 333px;
+    }
+    &__tittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 64px;
+        color: #333333;
+        margin-top: 33px;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;
+        max-width: 640px;
+        margin-top: 28px;
+    }
+    &__link-box{
+        display: flex;
+        margin-top: 64px
+    }
+    &__link1{
+        @extend %link;
+        width: 175px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background: #FFBD54;
+        border-radius: 3px;
+        color: #FFFFFF !important;
+    }
+    &__link1::before{
+        content: url(/images/service-open/money.svg);
+        margin-right: 6px;
+    }
+    &__link1:hover{
+        background: #333333;
+        color: #FFBD54 !important;
+    }
+    &__link1:active{
+        opacity: 0.6;
+    }
+    &__link2{
+        @extend %link;
+        width: 231px;
+        height: 50px;
+        background: #333333;
+        border-radius: 3px;
+        color: #FFFFFF !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+    &__link2::before{
+        content: url(/images/service-open/list.svg);
+        margin-right: 6px;
+    }
+    &__link2:hover{
+        background: #FFBD54;
+        color: #333333 !important;
+    }
+    &__link2:active{
+        opacity: 0.6;
+    }
+}
+
+
+.aside{
+    position: absolute;
+    top: -50px;
+    right: 60px;
+    &__box{
+        max-width: 305px;
+        height: 435px;
+        background: #FEFEFE;
+        border: 1px solid #E4E4E2;
+        border-radius: 5px;
+        margin-bottom: 11px;
+    }
+    &__box:hover{
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &__box:active{
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &__date{
+        @extend %text-style;
+        color: #949494 !important;
+        margin-left: 200px;
+        margin-top: 15px;
+    }
+    &__h5{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 25px;
+        color: #000000;
+        max-width: 200px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;
+        max-width: 240px;
+        margin-left: 30px;
+        margin-top: 15px
+    }
+    &__link{
+        @extend %link;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 55px;
+        margin-top: 25px;
+        position: relative;
+    }
+    &__link:hover{
+        color: #FFBD54;
+    }
+    &__link:active{
+        color: #333333;
+        opacity: 0.7;
+    }
+    &__link::before{
+        content: url(/images/home-page/paw.svg);
+        position: absolute;
+        left: -32px;
+    }
+}
+
+
+.section33333{
+    padding-bottom: 190px;
+    &__wrapper{
+        height: 500px;
+        background-image: url(/images/service-open/bg-pows.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        position: relative;
+    }
+    &__box1{
+        margin-top: 64px;
+        margin-left: 100px;
+    }
+    &__box2{
+        margin-top: 64px;
+        margin-left: 40px;
+    }
+    &__box2::after{
+        content: url(/images/service-open/dog.png);
+        position: absolute;
+        top: -50px;
+        right: 0px;
+        z-index: 1;
+    }
+    &__tittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 62px;
+        color: #FFFFFF;
+        max-width: 276px;
+        margin: 0px;
+    }
+    &__p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    &__text{
+        width: 375px;
+        height: 50px;
+        background: #FFFFFF;
+        border: 1px solid #fff;
+        outline: none;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    &__text:focus{
+        border: 2px solid #FFBD54;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    &__text:focus::placeholder{
+        color: #333333;
+    }
+    &__text::placeholder{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #949494;
+    }
+    &__textarea{
+        width: 375px;
+        height: 165px;
+        background: #FFFFFF;
+        border: 1px solid #fff;
+        outline: none;
+        padding-bottom: 110px;
+        padding-left: 20px;
+    }
+    &__textarea:focus{
+        border: 2px solid #FFBD54;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    &__textarea:focus::placeholder{
+        color: #333333;
+    }
+    &__textarea::placeholder{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #949494;
+    }
+    &__btn{
+        width: 226px;
+        height: 50px;
+        background: #000000;
+        text-decoration: none;
+        @extend %link;
+        color: #fff !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    &__btn:hover{
+        background: #333333;
+        color: #FFBD54 !important;
+    }
+    &__btn:active{
+        opacity: 0.6;
+    }
+}
+
+.yellow{
+    color: #FFBD54;
+}
+

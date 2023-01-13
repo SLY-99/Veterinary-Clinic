@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Futura PT';
+}
+.main{
+    background-color: #f9f8f8;
+    background-image: url(/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@import "./container";
+@import "./header";
+@import "./block1";
+@import "./block2";
+@import "./block3";
+@import "./block4";
+@import "./block5";
+@import "./block6";
+@import "./block7";
+@import "./services";
+@import "./services-open";
+@import "./blog";
+@import "./about";
+@import "./modal";
+@import "./footer";

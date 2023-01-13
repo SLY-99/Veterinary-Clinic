@@ -1,0 +1,86 @@
+.footer{
+    &__wrapper{
+        display: flex;
+        background: #F3F3F3;
+        border: 1px solid #EBEBEB;
+        position: relative;
+        padding-bottom: 70px;
+        padding-top: 60px;
+    }
+    &__logo{
+        margin-left: 65px;
+    }
+    &__logo:hover{
+        opacity: 0.8;
+    }
+    &__logo:active{
+        opacity: 0.6;
+    }
+    &__wrapper-right{
+        display: flex;
+        margin-left: 100px;
+    }
+    &__list{
+        list-style-type: none;
+        padding: 0px;
+        margin-left: 67px;
+    }
+    &__menu{
+        list-style-type: none;
+        margin-left: 80px;
+        position: relative;
+    }
+    &__item{
+        margin-bottom: 14px;
+    }
+    &__item2::before{
+        content: url(/images/home-page/phone.svg);
+        position: absolute;
+        left: -23px
+    }
+    &__link{
+        @extend %link;
+        text-decoration: none;
+    }
+    &__link:hover{
+        color: #FFBD54;
+    }
+    &__link:active{
+        color: rgba(51, 51, 51, 0.7);
+    }
+    &__info-text{
+        @extend %text-style;
+        position: relative;
+    }
+    &__icon-date::before{
+        content: url(/images/home-page/calendar.svg);
+        position: absolute;
+        left: -25px
+    }
+    &__text{
+        @extend %link;
+        position: relative;
+    }
+    &__text::before{
+        content: url(/images/home-page/house.svg);
+        position: absolute;
+        left: -25px;
+    }
+    &__info-link{
+        @extend %text-style;
+        text-decoration: none;
+        position: relative;
+    }
+    &__info-link:hover{
+        color: #FFBD54;
+    }
+    &__info-link:active{
+        color: #333333;
+        opacity: 0.6;
+    }
+    &__copyright{
+        position: absolute;
+        bottom: 20px;
+        right: 50px;
+    }
+}

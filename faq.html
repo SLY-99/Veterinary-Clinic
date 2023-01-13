@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__info">
+                <p class="header__text">г. Мариуполь, проспект Победы, 48а</p>
+                <a class="header__info-link header__icon-tel" href="tel:(067) 634 -75 - 74">(067) 634 -75 - 74</a>
+                <a class="header__info-link header__icon-dot" href="tel:(0637) 57 - 01 - 31">(0637) 57 - 01 - 31</a>
+                <a class="header__info-link header__icon-dot" href="tel:(098) 266 - 43 - 89">(098) 266 - 43 - 89</a>
+                <p class="header__info-text header__icon-date"><b>Пн - Пт</b> 8:00 - 18:00</p>
+                <p class="header__info-text"><b>Сб - Вс</b> 8:00 - 14:00</p>
+            </div>
+            <div class="header__nav">
+                <a href="./index.html"><img class="header__logo" src="./images/home-page/logo.svg" alt="logo"></a>
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="/index.html">Главная</a></li>
+                    <li class="header__item"><a class="header__link" href="/about.html" target="_blank">О Клинике</a></li>
+                    <li class="header__item"><a class="header__link" href="/services.html" target="_blank">Наши Услуги</a></li>
+                    <li class="header__item"><a class="header__link" href="/blog.html" target="_blank">Полезные Статьи</a></li>
+                    <li class="header__item"><a class="header__link" href="/faq.html" target="_blank">FAQ</a></li>
+                    <li class="header__item"><a class="header__link" href="/contact.html" target="_blank">Контакты</a></li>
+                </ul>
+                <a class="header__search-link" href="#">Задать вопрос</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section111">
+            <div class="container">
+                <div class="section111__wrapper">
+                    <h1 class="section111__tittle">faq</h1>
+                    <p class="section111__text">Узнать информацию о наших услугах, записаться на прием к врачу или проконсультироваться вы можете по телефону, в любое удобное для вас время.</p>
+                    <a onclick="document.getElementById('modal').style.display='block'" id="btn" class="section111__link" href="#">Задать вопрос</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="modal" class="modal">
+                <div class="wrapper">
+                    <a onclick="document.getElementById('modal').style.display='none'" id="close" class="img-link"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="close" d="M11.113 8.99872L17.5567 2.56902C17.8389 2.2868 17.9974 1.90402 17.9974 1.5049C17.9974 1.10577 17.8389 0.722997 17.5567 0.440774C17.2745 0.158551 16.8918 0 16.4928 0C16.0937 0 15.711 0.158551 15.4288 0.440774L9 6.88546L2.57121 0.440774C2.28903 0.158551 1.90631 -2.9737e-09 1.50724 0C1.10817 2.9737e-09 0.725452 0.158551 0.443269 0.440774C0.161086 0.722997 0.00255743 1.10577 0.00255743 1.5049C0.00255743 1.90402 0.161086 2.2868 0.443269 2.56902L6.88704 8.99872L0.443269 15.4284C0.302812 15.5678 0.191329 15.7335 0.115249 15.9162C0.0391699 16.0988 0 16.2947 0 16.4925C0 16.6904 0.0391699 16.8863 0.115249 17.0689C0.191329 17.2516 0.302812 17.4173 0.443269 17.5567C0.582579 17.6971 0.74832 17.8086 0.930933 17.8847C1.11355 17.9608 1.30941 18 1.50724 18C1.70507 18 1.90094 17.9608 2.08355 17.8847C2.26616 17.8086 2.4319 17.6971 2.57121 17.5567L9 11.112L15.4288 17.5567C15.5681 17.6971 15.7338 17.8086 15.9165 17.8847C16.0991 17.9608 16.2949 18 16.4928 18C16.6906 18 16.8865 17.9608 17.0691 17.8847C17.2517 17.8086 17.4174 17.6971 17.5567 17.5567C17.6972 17.4173 17.8087 17.2516 17.8848 17.0689C17.9608 16.8863 18 16.6904 18 16.4925C18 16.2947 17.9608 16.0988 17.8848 15.9162C17.8087 15.7335 17.6972 15.5678 17.5567 15.4284L11.113 8.99872Z" fill="#333333"/>
+                        </svg></a>
+                    <div class="modal-content1">
+                        <p class="text">Авторизация:</p>
+                        <a class="link google" href="#">Войти через Google</a>
+                        <a class="link facebook" href="#">Войти через Facebook</a>
+                    </div>
+                    <div class="modal-content2">
+                        <h2 class="tittle">Задать вопрос</h2>
+                        <form action="#">
+                            <input class="modal-text" type="text" placeholder="Ваше имя" required> <br>
+                            <input class="modal-textarea" type="text"  placeholder="Опишите Ваш вопрос." required> <br>
+                            <button class="modal-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section222">
+            <div class="container">
+                <div class="section222__wrapper">
+                    <div class="section222__box">
+                        <p class="section222__date">01.09.2020</p>
+                        <p class="section222__name">Пономаренко Наталия</p>
+                    </div>
+                    <h3 class="section222__tittle section222__pow-yellow">Как часто следует проводить обработки от блох и клещей?</h3>
+                    <p class="section222__text">Самые качественные капли от блох и клещей как правило действуют не более одного месяца. Поэтому собак и кошек следует обрабатывать от блох именно с такой периодичностью. Обработки противопаразитарными каплями особенно актуальны для собак в период с марта по декабрь, когда активизируют свою активность клещи. Подобрать препарат от блох и клещей Вам помогут в ветеринарном комплексе “Передовой”. Также здесь Вам помогут в расчёте дозировки этих препаратов.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section333">
+            <div class="container">
+                <div class="section333__box">
+                    <div class="section333__wrapper section333__arrow-down section222__pow-blue">
+                        <div class="section222__box">
+                            <p class="section222__date">01.09.2020</p>
+                            <p class="section222__name">Пономаренко Наталия</p>
+                        </div>
+                        <h3 class="section222__tittle">Может ли кошка или собака никогда не выходящая из дома подхватить блох?</h3>
+                    </div>
+                    <div class="section333__wrapper section333__clock opasity section222__pow-yellow">
+                        <div class="section222__box">
+                            <p class="section222__date">01.09.2020</p>
+                            <p class="section222__name">Пономаренко Наталия</p>
+                        </div>
+                        <h3 class="section222__tittle">Может ли кошка или собака никогда не выходящая из дома подхватить блох?</h3>
+                    </div>
+                    <div class="section333__wrapper section333__arrow-down section222__pow-blue">
+                        <div class="section222__box">
+                            <p class="section222__date">31.08.2020</p>
+                            <p class="section222__name">Пономаренко Наталия</p>
+                        </div>
+                        <h3 class="section222__tittle">Чем очищать глаза собаке или кошке?</h3>
+                    </div>
+                    <div class="section333__wrapper section333__arrow-down section222__pow-yellow">
+                        <div class="section222__box">
+                            <p class="section222__date">31.08.2020</p>
+                            <p class="section222__name">Пономаренко Наталия</p>
+                        </div>
+                        <h3 class="section222__tittle">Чем лучше кормить – натуральным или готовым кормом?</h3>
+                    </div>
+                    <div class="section333__wrapper section333__clock opasity section222__pow-blue">
+                        <div class="section222__box">
+                            <p class="section222__date">27.08.2020</p>
+                            <p class="section222__name">Пономаренко Наталия</p>
+                        </div>
+                        <h3 class="section222__tittle">Зачем нужны витамины и в каком возрасте их нужно давать?</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="./index.html"><img class="footer__logo" src="./images/home-page/logofooter.svg" alt="footer-logo"></a>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="/index.html">Главная</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/about.html" target="_blank">О Клинике</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/services.html" target="_blank">Наши Услуги</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="/blog.html" target="_blank">Полезные Статьи</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/faq.html" target="_blank">FAQ</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/contact.html" target="_blank">Контакты</a></li> 
+                </ul>
+                <div class="footer__wrapper-right">
+                    <ul  class="footer__menu">
+                        <li><p class="footer__info-text footer__icon-date"><b>Пн - Пт</b> 8:00 - 18:00</p></li>
+                        <li><p class="footer__info-text"><b>Сб - Вс</b> 8:00 - 14:00</p></li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li><p class="footer__text">г. Мариуполь, <br> проспект Победы, 48а</p></li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__item2"><a class="footer__info-link" href="tel:(067) 634 -75 - 74">(067) 634 -75 - 74</a></li>
+                        <li><a class="footer__info-link" href="tel:(0637) 57 - 01 - 31">(0637) 57 - 01 - 31</a></li>
+                        <li><a class="footer__info-link" href="tel:(098) 266 - 43 - 89">(098) 266 - 43 - 89</a></li>
+                    </ul>
+                    <p class="footer__copyright">© 2020 example. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.about1{
+    &__wrapper{
+        background-image: url(/images/about-page/bg-puppys.png);
+        background-repeat: no-repeat;
+        background-position: 850px;
+        background-position-y: 50px;
+    }
+    &__text-box{
+        padding-top: 120px;
+        margin-left: 150px;
+        margin-bottom: 100px;
+    }
+    &__tittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 64px;
+        color: #333333;
+        margin: 0px;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;
+        max-width: 400px;
+        margin-top: 22px;
+    }
+    &__box{
+        width: 670px;
+        height: 235px;
+        background-image: url(/images/about-page/bg-paws.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 80px;
+        position: relative;
+        bottom: 30px;
+    }
+    &__box::after{
+        content: url(/images/about-page/Object.png);
+        position: relative;
+        left: 440px;
+        top: 100px;
+    }
+}
+
+.about2{
+    &__wrapper{
+        background-color: #fff;
+        height: 450px;
+        display: flex;
+    }
+    &__img{
+        max-width: 650px;
+    }
+    &__text-box{
+        display: flex;
+        align-items: center;
+        margin-left: 90px;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #949494;
+        max-width: 557px;
+    }
+}
+.yellow{
+    color: #FFBD54;
+}
+.sky-blue{
+    color:#78C0DE;
+}
+
+.about3{
+    &__wrapper{
+        padding-top: 130px;
+        padding-bottom: 200px;
+        background-image: url(/images/about-page/bg-dog.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;
+        max-width: 495px;
+        margin-left: 150px;
+    }
+}
+
+.about4{
+    &__wrapper{
+        display: flex;
+        padding-bottom: 150px;
+    }
+    &__text-box{
+        margin-left: 100px;
+        margin-right: 18px;
+    }
+    &__tittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 48px;
+        color: #333333;
+        max-width: 416px;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;
+        max-width: 343px;
+        margin-top: 24px;
+    }
+    &__img2{
+        padding-left: 10px;
+    }
+    &__img{
+        margin-top: 90px;
+        margin-right: 80px;
+    }
+}

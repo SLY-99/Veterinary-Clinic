@@ -1,0 +1,187 @@
+//home-page classes
+.section2{
+    
+    &__wrapper{
+        max-width: 1134px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        position: relative;
+    }
+    &__wrapper::before{
+        content: url(/images/home-page/“open.svg);
+        position: relative;
+        right: 450px;
+        top: 30px;
+    }
+    &__wrapper::after{
+        content: url(/images/home-page/“close.svg);
+        position: relative;
+        left: 450px;
+        bottom: 120px;
+    }
+    &__quote{
+        max-width: 800px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        color: #949494;
+    }
+    &__quote::before{
+        content: "";
+        width: 140px;
+        height: 0px;
+        border: 1px solid #DBDBDB;
+        position: absolute;
+        top: 0px;
+        left: 320px;
+    }
+    &__quote::after{
+        content: "";
+        width: 140px;
+        height: 0px;
+        border: 1px solid #DBDBDB;
+        position: absolute;
+        top: 170px;
+        left: 320px;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #333333;
+        margin-top: 80px;
+    }
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+//Contact-page classes
+.section22{
+    &__wrapper{
+        width: 945px;
+        height: 330px;
+        display: flex;
+        align-items: flex-end;
+        background-image:url(/images/contact-page/paws.png);
+        margin-right: 30px;
+        margin-top: 130px;
+    }
+    &__tittle{
+        margin-left: 80px;
+        margin-bottom: 5px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 62px;
+        color: #333333;
+        position: relative;
+    }
+    &__tittle::before{
+        content: url(/images/contact-page/Object.png);
+        position: absolute;
+        top: -130px;
+        right: 50px;
+    }
+}
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+//FAQ-page classe
+.section222{
+    &__wrapper{
+        width: 752px;
+        height: 305px;
+        background: #FFFFFF;
+        border: 1px solid #F3F3F3;
+        border-radius: 5px;
+        margin-top: 63px;
+        margin-left: 130px;
+        position: relative;
+    }
+    &__wrapper::before{
+        content: url(/images/FAQ/cat.png);
+        position: absolute;
+        top: -400px;
+        right: -468px;
+    }
+    &__wrapper::after{
+        content: url(/images/FAQ/arrow-up.png);
+        cursor: pointer;
+        position: absolute;
+        top: 65px;
+        right: 60px;
+    }
+    &__box{
+        display: flex;
+        margin-left: 60px;
+    }
+    &__date{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #333333;
+        margin-top: 25px;
+        margin-left: 33px;
+    }
+    &__pow-yellow::before{
+        content: url(/images/FAQ/pow-yellow.png);
+        position: absolute;
+        top: 22px;
+        left: 58px;
+    }
+    &__pow-blue::before{
+        content: url(/images/FAQ/pow-blue.png);
+        position: absolute;
+        top: 22px;
+        left: 58px;
+    }
+    &__name{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #78C0DE;
+        margin-left: 28px;
+        margin-top: 25px;
+    }
+    &__tittle{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+        color: #333333;
+        max-width: 530px;
+        margin-left: 60px;
+        margin-top: 15px;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;
+        max-width: 577px;
+        margin-left: 60px;
+        margin-top: 23px;
+    }
+}
